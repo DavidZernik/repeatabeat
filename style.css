@@ -607,6 +607,7 @@ This next part are the divs that contains the instrumentation
     width: 200px;
     height: 500px;
     margin-left: 10px;
+    /*floating it to the left was how I got the divs to line up */
     float: left;
   }
 
@@ -645,4 +646,8 @@ This next part are the divs that contains the instrumentation
 
   #mainContainer{
     display: inline;
+  }
+
+  audio {
+    visibility: hidden;
   }

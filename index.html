@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="style.css">
-    <title>8Bar</title>
+    <title>Repeat A-Beat</title>
     <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
     <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
   <script src="app.js"type="text/javascript"></script>
@@ -12,15 +12,20 @@
   <body>
     <!--
           This is all code from codepen.io
------------------------------------------------------------------------------->
+-------------------------------------------------------------------------------------->
     <div id="container">
 
     <p><a href="https://en.wikipedia.org/wiki/Red">
     <!--  RED  comment out the button -->
     </a></p>
 
-    <p><a href="https://en.wikipedia.org/wiki/Blue">
-      Play 8Bar
+
+
+
+
+    <!---   Here's the top button that calls the audio -------------------------------------->
+    <p id="originalBeat"><a>
+      Play Beat
     </a></p>
 
     <p><a href="https://en.wikipedia.org/wiki/Yellow">
@@ -48,23 +53,22 @@
 
     <!--
           End of codepen.io code
------------------------------------------------------------------------------------------------------------------------------------------------->
-
+-------------------------------------------------------------------------------------------------------------->
 <div id="mainContainer">
-
+<!-- Container 1----------------------------------------------------------------------->
 <div id="container1">
 <div id="melodyHeader">Melody Options</div>
 <div id="melodyOptions">
 <ul>
-<button id="melodyOne"    class='melody'>Melody Sound 1</button><br>
-<button id="melodyTwo"    class='melody'>Melody Sound 2</button><br>
-<button id="melodyThree"  class='melody'>Melody Sound 3</button><br>
-<button id="melodyFour"   class='melody'>Melody Sound 4</button><br>
-<button id="melodyFive"   class='melody'>Melody Sound 5</button><br>
+<button id="melody1"    class='melody'>Melody Sound 1</button><br>
+<button id="melody2"    class='melody'>Melody Sound 2</button><br>
+<button id="melody3"  class='melody'>Melody Sound 3</button><br>
+<button id="melody4"   class='melody'>Melody Sound 4</button><br>
+<button id="melody5"   class='melody'>Melody Sound 5</button><br>
 </ul>
-</div>  <!-- melodyOptions    -->
-</div>  <!-- container1    -->
-
+</div>  <!-- closes melodyOptions --------->
+</div>  <!-- closes container1    --------->
+<!-- Container 2 --------------------------------------------------------------------------->
 <div id="container2">
 <div id="instrumentHeader">Instrument Options</div>
 <div id="instrumentOptions">
@@ -77,8 +81,7 @@
 </ul>
 </div>    <!-- instrumentOptions    -->
 </div>     <!-- container2    -->
-
-
+<!-- Container 3 --------------------------------------------------------------------------->
 <div id="container3">
 <div id="beatHeader">Beat Options</div>
 <div id="beatOptions">
@@ -91,15 +94,97 @@
 </ul>
 </div>    <!-- instrumentOptions    -->
 </div>     <!-- container2    -->
-
-
-
-</div>    <!-- main container     -->
-
-<audio controls>
-  <source src="Bruno Mars.mp3" type="audio/mpeg">
-Your browser does not support the audio element.
+</div>    <!-- closes main container -->
+<!-- Original sounds --------------------------------------------------------------->
+<audio controls id="audioOriginal1">
+  <source src="music/1.mp3" type="audio/mpeg">
 </audio>
+<!--Melody buttons----------------------------------------------------------------->
+<audio controls id="audio1">
+  <source src="music/3.mp3" type="audio/mpeg">
+</audio>
+
+<audio controls id="audio2">
+  <source src="music/3.mp3" type="audio/mpeg">
+</audio>
+
+<audio controls id="audio3">
+  <source src="music/4.mp3" type="audio/mpeg">
+</audio>
+
+<audio controls id="audio4">
+  <source src="music/5.mp3" type="audio/mpeg">
+</audio>
+
+<audio controls id="audio5">
+  <source src="music/6.mp3" type="audio/mpeg">
+</audio>
+<!--Instrument buttons----------------------------------------------------------------->
+<audio controls id="audio">
+  <source src="Bruno Mars.mp3" type="audio/mpeg">
+</audio>
+
+<!-- Sound 8  -->
+<audio controls id="audio">
+  <source src="Bruno Mars.mp3" type="audio/mpeg">
+</audio>
+
+<!-- Sound 9  -->
+<audio controls id="audio">
+  <source src="Bruno Mars.mp3" type="audio/mpeg">
+</audio>
+
+<!-- Sound 10  -->
+<audio controls id="audio">
+  <source src="Bruno Mars.mp3" type="audio/mpeg">
+</audio>
+
+<!-- Sound 11  -->
+<audio controls id="audio">
+  <source src="Bruno Mars.mp3" type="audio/mpeg">
+</audio>
+
+<!-- Sound 12  -->
+<audio controls id="audio">
+  <source src="Bruno Mars.mp3" type="audio/mpeg">
+</audio>
+
+<!-- Sound 13  -->
+<audio controls id="audio">
+  <source src="Bruno Mars.mp3" type="audio/mpeg">
+</audio>
+
+<!-- Sound 14  -->
+<audio controls id="audio">
+  <source src="Bruno Mars.mp3" type="audio/mpeg">
+</audio>
+
+<!-- Sound 15  -->
+<audio controls id="audio">
+  <source src="Bruno Mars.mp3" type="audio/mpeg">
+</audio>
+
+<!-- Sound 16  -->
+<audio controls id="audio">
+  <source src="Bruno Mars.mp3" type="audio/mpeg">
+</audio>
+
+<!-- Sound 17  -->
+<audio controls id="audio">
+  <source src="Bruno Mars.mp3" type="audio/mpeg">
+</audio>
+
+<!-- Sound 18  -->
+<audio controls id="audio">
+  <source src="Bruno Mars.mp3" type="audio/mpeg">
+</audio>
+
+<!-- Sound 19  -->
+<audio controls id="audio">
+  <source src="music/2.mp3" type="audio/mpeg">
+</audio>
+
+<!-- End of audio files -------------------------------------------------------------->
 
 <br>
 <br><br><br><br><br><br><br><br><br>
