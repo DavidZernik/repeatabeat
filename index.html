@@ -10,11 +10,10 @@
 //need a div that will contain everything
 <div id="wholeThing">
     <!-- the container with the rules text -->
-    <div id="rulesContainer"><font face="garamond"> On each player's turn, click the yellow "play beat" button to here the original beat.
-    Then, choose the correct melody, instruments, and drums that go together to make that original beat. First,
-    single-click the melody buttons to hear the melody options. Double click the one you think
-    is correct. <br><br>If you guess the melody correctly, guess the instruments: single-click to listen, double click to choose. Then, go on to the drums.
-    If you guess the melody, the instruments and the drums all correctly, you get a point! First to four wins </font></div>
+    <div id="rulesContainer"><font face="garamond"> On each player's turn, hover over a beat to hear it.
+    Then, choose the correct melody, instruments, and drums that go together to make that original beat. Hover over the melody buttons to hear the melody options, then double click the one you think
+    is correct. <br><br>If you guess the melody correctly, guess the instruments- hover over to listen, double click to choose. Then, go on to the drums.
+    If you guess the melody, the instruments and the drums all correctly, you get a point! First to three wins </font></div>
 
     <!--This is all code from codepen.io-------------------------------------------------------------------------------------->
     <div id="container">
@@ -24,14 +23,23 @@
     </a></p>
 
 
-    <!---   Here's the top button that calls the audio -------------------------------------->
+    <!---   Here are iamges that calls the original beats -------------------------------------->
     <p ><a>
       <!-- Play Beat -->
     </a></p>
 
     <p id="originalBeat"><a>
-     Play Beat
+     Beat 1
   </a></p>
+  <p id="originalBeat2"><a>
+   Beat 2
+</a></p>
+<p id="originalBeat3"><a>
+ Beat 3
+</a></p>
+<p id="originalBeat4"><a>
+ Beat 4
+</a></p>
 
     <p><a href="https://en.wikipedia.org/wiki/Green">
     <!--  GREEN  comment out the button -->
@@ -52,9 +60,9 @@
     0 0 0 5px;font-family:sans-serif">My Site</a></div>
     </ul>
 
+<!-- Container that contains divs 1-4 -->
 
-
-
+<div id="middleWrap">
 <!-- Container 1------------------------------------------------------------------------------>
 <div id="container1">
 <div id="melodyHeader">Melody Options</div>
@@ -104,61 +112,72 @@
   <span id="player2Score">player 2 has 0</span>
 
 </div>  <!-- closes container4    --------->
+
+</div>
 <!-- Original sounds --------------------------------------------------------------->
 <audio controls id="audioOriginal1">
-  <source src="Project1/original1.mp3" type="audio/mpeg">
+  <source src="https://dl-web.dropbox.com/get/original1.mp3?_subject_uid=295696607&w=AAC9h4-zrGdQcH4WX0-o14XSYz4Hqh0nYZvQ5e23gFJjhQ" type="audio/mpeg">
+</audio>
+<audio controls id="audioOriginal2">
+  <source src="https://dl-web.dropbox.com/get/thisoneorginaltrue.mp3?_subject_uid=295696607&w=AADaTAjyolDKzeLN0quQVbh3KoKe6xCM-rabu6k_22gahw">
+</audio>
+<audio controls id="audioOriginal3">
+  <source src="https://dl-web.dropbox.com/get/realoriginal2.mp3?_subject_uid=295696607&w=AACIgyuqdaHQFQ8iIMYY5AsWOmdGPA2sXAHB3g8WCNJUdQ" type="audio/mpeg">
+</audio>
+<audio controls id="audioOriginal4">
+  <source src="https://dl-web.dropbox.com/get/4_originalTruetruetruetrue.mp3?_subject_uid=295696607&w=AADjuUusoF3wcQh6JJ1Nvtx5RCRlCaXsGGFyUhX7Ik_Few">
 </audio>
 <!--Melody buttons----------------------------------------------------------------->
 <audio controls id="audio1">
-  <source src="music/1.mp3" type="audio/mpeg">
+  <source src="https://dl-web.dropbox.com/get/melody4.mp3?_subject_uid=295696607&w=AAAa4YX1xahxZHvzZ5jCxU2-EgOHv5_3dzkZulipCeBDsg" type="audio/mpeg">
 </audio>
 <audio controls id="audio2">
-  <source src="Project1/melody1.mp3" type="audio/mpeg">
+  <source src="https://dl-web.dropbox.com/get/melody1.mp3?_subject_uid=295696607&w=AADfxrT0PYZHOepGvkrH19H85XCN_ptwK46WSmck4hVo6w" type="audio/mpeg">
 </audio>
 <audio controls id="audio3">
-  <source src="music/3.mp3" type="audio/mpeg">
+  <source src="https://dl-web.dropbox.com/get/melodyTruetruetrue.mp3?_subject_uid=295696607&w=AACa8cVrNJamKNiF09jh9Ajj_K1q7VFqbojKtw9O6jKobA">
 </audio>
 <audio controls id="audio4">
-  <source src="music/14.mp3" type="audio/mpeg">
+  <source src="https://dl-web.dropbox.com/get/_3melodyTruetrue.mp3?_subject_uid=295696607&w=AABCJkn7VacdmfyIWqMo_P8jggyRdd_EELWWU0y7ZzQUPQ">
 </audio>
 <audio controls id="audio5">
-  <source src="music/5.mp3" type="audio/mpeg">
+  <source src="https://dl-web.dropbox.com/get/melodyTrue.mp3?_subject_uid=295696607&w=AABTjq_6cpBXGczt5rHrraOKLsodaFKo9hwTDesgXDpxpQ">
 </audio>
 <!--Instrument buttons----------------------------------------------------------------->
 <audio controls id="audio6">
-  <source src="music/6.mp3" type="audio/mpeg">
+  <source src="https://dl-web.dropbox.com/get/instruments4.mp3?_subject_uid=295696607&w=AAAlGJCUXqOJghjHO9bXNu_6QfBj1ea9TD65bLWI3x0-GA">
 </audio>
 <audio controls id="audio7">
-  <source src="Project1/melody1.mp3" type="audio/mpeg">
+  <source src="https://dl-web.dropbox.com/get/4_instrus_truetruetrue.mp3?_subject_uid=295696607&w=AAA4bJFznvKMKCPAOhkiAh1l9WoWGruGIByEHo2cv2-1ig">
 </audio>
 <audio controls id="audio8">
-  <source src="music/8.mp3" type="audio/mpeg">
+  <source src="https://dl-web.dropbox.com/get/realinstrus2.mp3?_subject_uid=295696607&w=AAA-QFiFNKpBcai0SRcpMz0xu7DjZU0KRqbMZYNEaehaOQ">
 </audio>
 <audio controls id="audio9">
-  <source src="music/9.mp3" type="audio/mpeg">
+  <source src="https://dl-web.dropbox.com/get/thisoneinstrutrue.mp3?_subject_uid=295696607&w=AABlzHqD03a9Va7sVcEbpNSf3tWEGkfNwCp3HpnxDDX4oA">
 </audio>
 <audio controls id="audio10">
-  <source src="music/10.mp3" type="audio/mpeg">
+  <source src="https://dl-web.dropbox.com/get/instrument1.mp3?_subject_uid=295696607&w=AACeMnkYCzEaAV4Y-lREKQyaCDige5UwRA1WiFVIV564KQ">
 </audio>
 
 <!--Drum buttons------------------------------------------------------------------------------>
 <audio controls id="audio11">
-  <source src="music/11.mp3" type="audio/mpeg">
+  <source src="https://dl-web.dropbox.com/get/drums1.mp3?_subject_uid=295696607&w=AAAy1jzhUaogcEuPmmPbnfNpiTYHUxmwztzcpgLHRhOQsg">
 </audio>
-<adio controls id="audio12">
-  <source src="music/11.mp3" type="audio/mpeg">
+<audio controls id="audio12">
+  <source src="https://dl-web.dropbox.com/get/realdrums2.mp3?_subject_uid=295696607&w=AADTMOINrQVfcVjGwEPudK3FpHsZvsq1oWCuUJZa36dnJA">
 </audio>
 
 <audio controls id="audio13">
-  <source src="music/11.mp3" type="audio/mpeg">
+  <source src="https://dl-web.dropbox.com/get/4_drumstruetruetrue.mp3?_subject_uid=295696607&w=AABNs5eudOrvsE9TRXeE0dS86TlZeyZctlLyXu7pQ6u5SA" type="audio/mpeg">
 </audio>
 
 <audio controls id="audio14">
-  <source src="music/14.mp3" type="audio/mpeg">
+  <source src="https://dl-web.dropbox.com/get/drums4.mp3?_subject_uid=295696607&w=AABqYEM1RxQ4ruiUpLkzp1ifvNMGGABgkxxesGOQ8cdSIg">
 </audio>
 
 <audio controls id="audio15">
-  <source src="music/11.mp3" type="audio/mpeg">
+  <source src="https://dl-web.dropbox.com/get/thisonemelodytrue.mp3?_subject_uid=295696607&w=AAD86YtjiNawzOP2gv5yHxItHjxWsXt8mNYQ3uPPHeNTxw">
 </audio>
 
 <br>
